@@ -57,6 +57,6 @@ public class Console {
     }
     public static void memorySettingsMenu(){
         Console.println("Memory Settings Menu: \n" +
-                "1:Add value to memory 2:Clear memory 3:Recall memory");
+                "1:Add Value To Memory 2:Clear Memory 3:Recall Memory");
     };
 }

@@ -34,76 +34,75 @@ public class MainApplication {
         case 8:
             Calculator.inverse();
             break;
-       /* case 9:
-            Calculator.switchSign();
+        case 9:
+//            Calculator.switchSign();
             break;
         case 10:
-            Calculator.factorial();
+//            Calculator.factorial();
             break;
         case 11:
             //our extra feature
             break;
         case 12:
             //our second extra feature
-            break; */
+            break;
         case 13:
             Console.printTrigFunctionsMenuOptions();
             Integer trigMenuOption = Console.getIntegerInput("Enter Option Number: ");
-                           /* switch(trigMenuOption){
+                           switch(trigMenuOption){
                                  case 1:
-                                     Calculator.sine();
+//                                     SciFunctions.sin();
                                      break;
                                  case 2:
-                                     Calculator.cosine();
+//                                     SciFunctions.cos();
                                      break;
                                  case 3:
-                                     Calculator.tangent();
+//                                     SciFunctions.tan();
                                      break;
                                  case 4:
-                                     Calculator.inverseSine();
+//                                     SciFunctions.sec();
                                      break;
                                  case 5:
-                                     Calculator.inverseCosine();
+//                                     SciFunctions.csc();
                                      break;
                                  case 6:
-                                     Calculator.inverseTangent();
+//                                     SciFunctions.cot();
                                      break;
-                                    default:
+                                        default:
                                         Console.println("Invalid entry!");
                                         break;
                              }
 
-                            */
                     break;
         case 14:
             Console.switchTrigUnitsMenu();
             Integer trigUnitOption = Console.getIntegerInput("Enter Option Number: ");
-                           /* switch(trigUnitOption){
+                            switch(trigUnitOption){
                                 case 1:
-                                    switchToDegrees();
+//                                    SciFunctions.switchToDegrees();
                                     break;
                                 case 2:
-                                    switchToRadians();
+//                                    SciFunctions.switchToRadians();
                                     break;
                                 default:
                                     Console.println("Invalid entry!");
                                     break;
-                            }*/
+                            }
         case 15:
                 Console.logarithmicFunctionsMenu();
                 Integer logFuncOption = Console.getIntegerInput("Enter Option Number: ");
                             switch(logFuncOption){
                                 case 1:
-                                   // log()
+                                   // SciFunctions.log()
                                     break;
                                 case 2:
-                                    // inverse log()
+                                    // SciFunctions.naturalLog()
                                     break;
                                 case 3:
-                                    //naturallog()
+                                    //SciFunctions.inverseLog()
                                     break;
                                 case 4:
-                                    //inverse natural log()
+                                    //SciFunctions.SciFunctions.inverseNaturalLog()
                                 default:
                                     Console.println("Invalid entry!");
                                     break;
@@ -139,7 +138,7 @@ public class MainApplication {
                                 //clear memory()
                                 break;
                             case 3:
-                                //Recall memory
+                                //Recall memory()
                             default:
                                 Console.println("Invalid entry!");
                                 break;
