@@ -43,4 +43,7 @@ public class Console {
         Console.println("Tri Functions Menu: \n 1:Sine 2:Cosine 3:Tangent " +
                 "4:Inverse Sine \n5:Inverse Cosine 6:Inverse Tangent");
     }
+    public static void switchTrigUnitsMenu() {
+        Console.println("")
+    }
 }
