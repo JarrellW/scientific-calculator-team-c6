@@ -21,17 +21,17 @@ public class Calculator {
     }
 
     public static void multiply() {
-        Integer i = Console.getIntegerInput("Enter an integer");
+        long i = Console.getIntegerInput("Enter an integer");
         Console.println("The user input %s as a integer", i);
-        Integer j = Console.getIntegerInput("Enter an integer");
+        long j = Console.getIntegerInput("Enter an integer");
         Console.println("The user input %s as a integer", j);
-        Console.println("%s * %s = %s", i, j);
+        Console.println("%s * %s = %s", i,j, i * j);
     }
 
     public static void divide() {
-        Integer i = Console.getIntegerInput("Enter an integer");
+        double i = Console.getIntegerInput("Enter an integer");
         Console.println("The user input %s as a integer", i);
-        Integer j = Console.getIntegerInput("Enter an integer");
+        double j = Console.getIntegerInput("Enter an integer");
         Console.println("The user input %s as a integer", j);
         if (j == 0) {
             Console.println("Err can't divide by zero");
@@ -62,7 +62,7 @@ public class Calculator {
     }
 
     public static void inverse() {
-        Integer i = Console.getIntegerInput("Enter an integer");
+        double i = Console.getIntegerInput("Enter an integer");
         Console.println("The user input %s as a integer", i);
         if (i == 0) {
             Console.println("Err can't divide by zero");
