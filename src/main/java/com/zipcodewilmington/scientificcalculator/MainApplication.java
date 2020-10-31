@@ -5,9 +5,9 @@ package com.zipcodewilmington.scientificcalculator;
  */
 public class MainApplication {
     public static void main(String[] args) {
-        Console.println("Welcome to my calculator!");
+        Console.println("Calculator Main Menu:");
         Console.printMenuOptions();
-        Integer userInput = Console.getIntegerInput("Enter an integer");
+        Integer userInput = Console.getIntegerInput("Enter Option Number: ");
         switch(userInput) {
         case 1:
             Calculator.add();
@@ -15,10 +15,38 @@ public class MainApplication {
         case 2:
             Calculator.subtract();
             break;
-
         case 3:
             Calculator.multiply();
             break;
+       /* case 4:
+            Calculator.divide();
+            break;
+        case 5:
+            Calculator.square();
+            break;
+        case 6:
+            Calculator.squareRoot();
+            break;
+        case 7:
+            Calculator.inverse();
+            break;
+        case 8:
+            Calculator.switchSign();
+            break;
+        case 9:
+            Calculator.factorial();
+            break;
+        case 10:
+            //our extra feature
+            break;
+        case 11:
+            //our second extra feature
+            break;
+        case 12:*/
+
+
+
+
 
             default:
                 Console.println("Invalid entry!");
