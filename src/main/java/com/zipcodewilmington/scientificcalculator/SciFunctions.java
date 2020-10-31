@@ -1,11 +1,11 @@
-//import com.zipcodewilmington.scientificcalculator.Console;
-//
-//public class SciFunctions {
-//
-//    public static void sin() {
-//        Integer i = Console.getIntegerInput("Enter an integer");
-//        Console.println("%s ", Math.toRadians(Math.sin(i)));
-//    }
+import com.zipcodewilmington.scientificcalculator.Console;
+
+public class SciFunctions {
+
+    public static void sin() {
+        Integer i = Console.getIntegerInput("Enter an integer");
+        Console.println("%s ", Math.toRadians(Math.sin(i)));
+    }
 //    public static void cos() {
 //        Integer i = Console.getIntegerInput("Enter an integer");
 //        Console.println("%s ", Math.toRadians(Math.cos(i)));
@@ -63,4 +63,4 @@
 ////////        case inverse natural log = Math.exp(Math.log())
 ////////         */
 ////////    }
-//}
+}
