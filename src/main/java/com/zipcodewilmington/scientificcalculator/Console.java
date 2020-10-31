@@ -23,10 +23,18 @@ public class Console {
     }
 
     public static Integer getIntegerInput(String prompt) {
-        return null;
+        Scanner scanner = new Scanner(System.in);
+        println(prompt);
+        Integer userInput = scanner.nextInt();
+        return userInput;
+
     }
 
     public static Double getDoubleInput(String prompt) {
         return null;
+    }
+    public static void printMenuOptions() {
+        Console.println("1: add");
+        Console.println("2: subtract");
     }
 }
