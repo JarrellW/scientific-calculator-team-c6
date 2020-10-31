@@ -49,7 +49,7 @@ public class MainApplication {
         case 13:
             Console.printTrigFunctionsMenuOptions();
             Integer trigMenuOption = Console.getIntegerInput("Enter Option Number: ");
-                           /*  switch(trigMenuOption){
+                           /* switch(trigMenuOption){
                                  case 1:
                                      Calculator.sine();
                                      break;
@@ -76,10 +76,36 @@ public class MainApplication {
                             */
                     break;
         case 14:
+            Console.switchTrigUnitsMenu();
+            Integer trigUnitOption = Console.getIntegerInput("Enter Option Number: ");
+                           /* switch(trigUnitOption){
+                                case 1:
+                                    switchToDegrees();
+                                    break;
+                                case 2:
+                                    switchToRadians();
+                                    break;
+                                default:
+                                    Console.println("Invalid entry!");
+                                    break;
+                            }*/
+        case 15:
+                Console.logarithmicFunctionsMenu();
+                Integer logFuncOption = Console.getIntegerInput("Enter Option Number: ");
+                            switch(logFuncOption){
+                                case 1:
+                                   // log()
+                                    break;
+                                case 2:
+                                    // inverse log()
+                                    break;
+                                case 3:
+                                    //naturallog()
+                                    break;
+                                case 4:
+                                    //inverse natural log()
 
-
-
-
+                            }
             default:
                 Console.println("Invalid entry!");
 }

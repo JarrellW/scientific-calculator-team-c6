@@ -40,10 +40,15 @@ public class Console {
                 "16:Switch Number Display Menu  17:Memory Settings Menu");
     }
     public static void printTrigFunctionsMenuOptions() {
-        Console.println("Tri Functions Menu: \n 1:Sine 2:Cosine 3:Tangent " +
+        Console.println("Trig Functions Menu: \n 1:Sine 2:Cosine 3:Tangent " +
                 "4:Inverse Sine \n5:Inverse Cosine 6:Inverse Tangent");
     }
     public static void switchTrigUnitsMenu() {
-        Console.println("");
+        Console.println("Switch Trig Units Menu: \n 1:Degrees 2:Radians");
+    }
+
+    public static void logarithmicFunctionsMenu(){
+        Console.println("Logarithmic Functions Menu: \n" +
+                "1:Log 2:Inverse Logarithm 3:Natural Logarithm 4:Inverse Natural Logarithm");
     }
 }
