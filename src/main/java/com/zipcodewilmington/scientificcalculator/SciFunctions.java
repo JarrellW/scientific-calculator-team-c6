@@ -1,53 +1,73 @@
+import com.zipcodewilmington.scientificcalculator.Console;
 
-//public class SciFunctions {
-//
-//// need to figure out the issue with this general idea is there
-//    public modeConverter() {
-//     /*
-//        int bi = Integer.valueOf(a, 2);
-//        int oct = Integer.valueOf(a, 8);
-//        int dec = Integer.valueOf(a, 10);
-//        int Hex = Integer.valueOf(a, 16);
-//      */
+public class SciFunctions {
+
+// These are not functional yet need to figure out the formatting
+    public static void sin() {
+        Integer i = Console.getIntegerInput("Enter an integer");
+        Console.println("%s ", i, Math.toRadians(Math.sin(i)));
+    }
+    public static void cos() {
+        Integer i = Console.getIntegerInput("Enter an integer");
+        Console.println("%s ", i, Math.toRadians(Math.cos(i)));
+    }
+    public static void tan() {
+        Integer i = Console.getIntegerInput("Enter an integer");
+        Console.println("%s ", i, Math.toRadians(Math.tan(i)));
+    }
+    public static void sec() {
+        Integer i = Console.getIntegerInput("Enter an integer");
+        Console.println("%s ", i, 1/Math.toRadians(Math.sin(i)));
+    }
+    public static void csc() {
+        Integer i = Console.getIntegerInput("Enter an integer");
+        Console.println("%s ", i, 1/Math.toRadians(Math.cos(i)));
+    }
+    public static void cot() {
+        Integer i = Console.getIntegerInput("Enter an integer");
+        Console.println("%s ", i, 1/Math.toRadians(Math.tan(i)));
+    }
+    public static void log() {
+        Integer i = Console.getIntegerInput("Enter an integer");
+        Console.println("%s ", Math.log10(i));
+    }
+    public static void naturalLog() {
+        Integer i = Console.getIntegerInput("Enter an integer");
+        Console.println("%s ", Math.log(i));
+    }
+    public static void inverseLog() {
+        Integer i = Console.getIntegerInput("Enter an integer");
+        Console.println("%s ", (Math.exp(Math.log10(i))));
+    }
+    public static void inverseNaturalLog() {
+        Integer i = Console.getIntegerInput("Enter an integer");
+        Console.println("%s ", (Math.exp(Math.log(i))));
+    }
+    // Mode switching not sure how to use this yet understand changing the string formatting
+//      public static void binary() {
+//    ????
+//        }
+//      public static void octal() {
+//    %o
+//        }
+//      public static void decimal() {
+//    %d
+//        }
+//      public static void hexadecimal() {
+//    %h
+//        }
+    // Again not sure with how to go about mode changes that change the calculator and how it returns values
+
+//      public unitSwitch() {
+//        case radian Math.toRadians(num)
+//        case degree Math.toDegree(num)
 //    }
-//
-//    public memory() {
-//        /*
+
+//   public memory() {
 //        case input  M+ adds the current displayed value in the memory and updates display
 //        case input  MC reset the memory
 //        case MRC recall the current value from memory to the display
-//         */
 //    }
-//    public trig(){
-//        /*
-//        case sin Math.toRadians(Math.sin(number)
-//        case cos Math.toRadians(Math.cos(number)
-//        case tan Math.toRadians(Math.tan(number)
-//        case sec Math.toRadians(Math.sec(number)
-//        case csc Math.toRadians(Math.csc(number)
-//        case cot Math.toRadians(Math.cot(number)
-//         */
-//    }
-//    public unitSwitch() {
-//        /*
-//        case radian Math.toRadians(num)
-//        case degree Math.toDegree(num)
-//         */
-//    }
-//    public logFunctions() {
-//        /*
-//        case log = Math.log10(number),number
-//        case natural log = Math.log(number)
-//        case inverse log = Math.exp(Math.log10())
-//        case inverse natural log = Math.exp(Math.log())
-//         */
-//    }
-//    public factorial() {
-//        /*
-//        display num
-//        for (int i
-//         */
-//    }
-//}
-//
-///*
+
+
+}
