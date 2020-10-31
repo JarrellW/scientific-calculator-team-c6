@@ -43,10 +43,36 @@ public class MainApplication {
             break;
         case 11:
             //our second extra feature
+            break; */
+        case 12:
+            Console.printTrigFunctionsMenuOptions();
+            Integer trigMenuOption = Console.getIntegerInput("Enter Option Number: ");
+                           /*  switch(trigMenuOption){
+                                 case 1:
+                                     Calculator.sine();
+                                     break;
+                                 case 2:
+                                     Calculator.cosine();
+                                     break;
+                                 case 3:
+                                     Calculator.tangent();
+                                     break;
+                                 case 4:
+                                     Calculator.inverseSine();
+                                     break;
+                                 case 5:
+                                     Calculator.inverseCosine();
+                                     break;
+                                 case 6:
+                                     Calculator.inverseTangent();
+                                     break;
+                                    default:
+                                        Console.println("Invalid entry!");
+                                        break;
+                             }
+
+                            */
             break;
-        case 12:*/
-
-
 
 
 
