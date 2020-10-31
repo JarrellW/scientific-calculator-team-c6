@@ -20,7 +20,7 @@ public class MainApplication {
         case 3:
             Calculator.multiply();
             break;
-       /* case 4:
+        case 4:
             Calculator.divide();
             break;
         case 5:
@@ -30,21 +30,23 @@ public class MainApplication {
             Calculator.squareRoot();
             break;
         case 7:
+                Calculator.toThePowerOf();
+        case 8:
             Calculator.inverse();
             break;
-        case 8:
+       /* case 9:
             Calculator.switchSign();
             break;
-        case 9:
+        case 10:
             Calculator.factorial();
             break;
-        case 10:
+        case 11:
             //our extra feature
             break;
-        case 11:
+        case 12:
             //our second extra feature
             break; */
-        case 12:
+        case 13:
             Console.printTrigFunctionsMenuOptions();
             Integer trigMenuOption = Console.getIntegerInput("Enter Option Number: ");
                            /*  switch(trigMenuOption){
@@ -73,7 +75,7 @@ public class MainApplication {
 
                             */
                     break;
-        case 13:
+        case 14:
 
 
 
