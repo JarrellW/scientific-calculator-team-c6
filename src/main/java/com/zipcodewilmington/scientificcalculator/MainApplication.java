@@ -9,6 +9,7 @@ public class MainApplication {
         Console.printMenuOptions();
         Integer userInput = Console.getIntegerInput("Enter an integer");
         switch(userInput) {
+
         case 1:
             Calculator.add();
             break;
@@ -19,6 +20,7 @@ public class MainApplication {
         case 3:
             Calculator.multiply();
             break;
+
 
             default:
                 Console.println("Invalid entry!");

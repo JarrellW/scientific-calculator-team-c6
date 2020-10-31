@@ -37,5 +37,8 @@ public class Console {
         Console.println("1: add");
         Console.println("2: subtract");
         Console.println("3: multiply");
+//        Console.println("4: divide");
+//        Console.println("5: square");
+
     }
 }
