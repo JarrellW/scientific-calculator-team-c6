@@ -36,5 +36,6 @@ public class Console {
     public static void printMenuOptions() {
         Console.println("1: add");
         Console.println("2: subtract");
+        Console.println("3: multiply");
     }
 }

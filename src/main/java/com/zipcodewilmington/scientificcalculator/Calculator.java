@@ -19,4 +19,12 @@ public class Calculator {
         Console.println("The user input %s as a integer", j);
         Console.println("%s - %s = %s", i,j, i -j);
     }
+
+    public static void multiply() {
+        Integer i = Console.getIntegerInput("Enter an integer");
+        Console.println("The user input %s as a integer", i);
+        Integer j = Console.getIntegerInput("Enter an integer");
+        Console.println("The user input %s as a integer", j);
+        Console.println("%s * %s = %s", i,j, i *j);
+    }
 }
