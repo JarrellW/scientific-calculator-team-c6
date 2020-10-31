@@ -15,6 +15,11 @@ public class MainApplication {
         case 2:
             Calculator.subtract();
             break;
+
+        case 3:
+            Calculator.multiply();
+            break;
+
             default:
                 Console.println("Invalid entry!");
 }
