@@ -20,7 +20,7 @@ public class MainApplication {
         case 3:
             Calculator.multiply();
             break;
-       /* case 4:
+        case 4:
             Calculator.divide();
             break;
         case 5:
@@ -32,7 +32,7 @@ public class MainApplication {
         case 7:
             Calculator.inverse();
             break;
-        case 8:
+        /* case 8:
             Calculator.switchSign();
             break;
         case 9:
