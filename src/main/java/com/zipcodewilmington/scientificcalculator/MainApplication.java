@@ -104,8 +104,46 @@ public class MainApplication {
                                     break;
                                 case 4:
                                     //inverse natural log()
-
+                                default:
+                                    Console.println("Invalid entry!");
+                                    break;
                             }
+            case 16:
+                Console.switchDisplayModeMenu();
+                Integer switchDisplayOption = Console.getIntegerInput("Enter Option Number: ");
+                            switch(switchDisplayOption){
+                                case 1:
+                                    //binary()
+                                    break;
+                                case 2:
+                                    //Octal()
+                                    break;
+                                case 3:
+                                    //decimal()
+                                    break;
+                                case 4:
+                                    //hexidecimal()
+                                    break;
+                                default:
+                                    Console.println("Invalid entry!");
+                                    break;
+                            }
+            case 17:
+                Console.memorySettingsMenu();
+                Integer memoryOption = Console.getIntegerInput("Enter Option Number: ");
+                        switch(memoryOption){
+                            case 1:
+                                //addvalue();
+                                break;
+                            case 2:
+                                //clear memory()
+                                break;
+                            case 3:
+                                //Recall memory
+                            default:
+                                Console.println("Invalid entry!");
+                                break;
+                        }
             default:
                 Console.println("Invalid entry!");
 }
