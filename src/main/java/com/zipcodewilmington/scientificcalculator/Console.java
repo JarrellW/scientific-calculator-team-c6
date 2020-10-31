@@ -39,14 +39,6 @@ public class Console {
                 "12:Trig Functions Menu \n13:Logarithmic Functions Menu  " +
                 "14:Switch Number Display Menu  15:Memory Settings Menu");
 
-        /*Console.println("4: Divide");
-        Console.println("5: Square");
-        Console.println("6: Square root");
-        Console.println("7: Inverse");
-        Console.println("8: Switch Sign");
-        Console.println("9: Factorial");
-        Console.println("10: future bonus feature!");
-        Console.println("11: other bonus feature!");*/
-
+       
     }
 }
