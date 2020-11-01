@@ -3,94 +3,100 @@ import com.zipcodewilmington.scientificcalculator.Console;
 
 public class SciFunctions {
     public static void sin() {
-        double i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, (Math.sin(i)));
+        Double i = Console.getDoubleInput("Enter number");
+        Console.println("sin(%s) = %s", i, (Math.sin(i)));
 
     }
 
     public static void cos() {
-        double i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, (Math.cos(i)));
+        Double i = Console.getDoubleInput("Enter a number");
+        Console.println("cos(%s) = %s", i, (Math.cos(i)));
     }
 
     public static void tan() {
-        double i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, (Math.tan(i)));
+        Double i = Console.getDoubleInput("Enter a number");
+        Console.println("tan(%s) = %s", i, (Math.tan(i)));
     }
 
     public static void sec() {
-        double i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, 1 / (Math.cos(i)));
+        Double i = Console.getDoubleInput("Enter a number");
+        Console.println("sec(%s) = %s", i, 1 / (Math.cos(i)));
     }
 
     public static void csc() {
-        double i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, 1 / (Math.sin(i)));
+        Double i = Console.getDoubleInput("Enter a number");
+        Console.println("csc(%s) = %s", i, 1 / (Math.sin(i)));
     }
 
     public static void cot() {
-        double i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, 1 / (Math.tan(i)));
+        Double i = Console.getDoubleInput("Enter a number");
+        Console.println("cot(%s) = %s", i, 1 / (Math.tan(i)));
     }
 
     public static void log() {
-        double i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, Math.log10(i));
+        Double i = Console.getDoubleInput("Enter a number");
+        Console.println("log(%s) = %s", i, Math.log10(i));
 
     }
 
     public static void naturalLog() {
-        double i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, Math.log(i));
+        Double i = Console.getDoubleInput("Enter a number");
+        Console.println("ln(%s) = %s", i, Math.log(i));
 
     }
 
     public static void inverseLog() {
-        double i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, (Math.exp(Math.log10(i))));
+        Double i = Console.getDoubleInput("Enter a number");
+        Console.println("inverse log(%s) = %s", i, (Math.exp(Math.log10(i))));
 
     }
 
     public static void inverseNaturalLog() {
-        double i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, (Math.exp(Math.log(i))));
+        Double i = Console.getDoubleInput("Enter a number");
+        Console.println("inverse ln(%s) = %s", i, (Math.exp(Math.log(i))));
+    }
+ public static void binary() {
+      Integer i = Console.getIntegerInput("Enter a number");
+      Console.println("Initial double value is " + i);
+     Console.println(Integer.toBinaryString(i));
+  }
+    public static void octal() {
+        Integer i = Console.getIntegerInput("Enter a number");
+        Console.println("Initial double value is " + i);
+        Console.println(Integer.toOctalString(i));
+    }
+
+//    public static void decimal() {
+//        Integer i = Console.getIntegerInput("Enter a number");
+//        Console.println("Initial double value is " + i);
+//        Console.println(parseInt(i));
+//    }
+
+    public static void hexadecimal() {
+        Integer i = Console.getIntegerInput("Enter a number");
+        Console.println("Initial double value is " + i);
+        Console.println(Integer.toHexString(i));
+    }
+
+    public static void radians() {
+        Integer i = Console.getIntegerInput("Enter a number");
+        Console.println("Initial double value is " + i);
+        Console.println("%s", i, Math.toRadians(i));
+    }
+    public static void degrees() {
+        Integer i = Console.getIntegerInput("Enter a number");
+        Console.println("Initial double value is " + i);
+        Console.println("%s", i, Math.toDegrees(i));
     }
 }
-    // Mode switching not sure how to use this yet understand changing the string formatting
-//      public static void binary() {
-//    ????
-//        }
-//      public static void octal() {
-//    %o
-//        }
-//      public static void decimal() {
-//    %d
-//        }
-//      public static void hexadecimal() {
-//    %h
-//        }
-    // Again not sure with how to go about mode changes that change the calculator and how it returns values
 
-//      public unitSwitch() {
-//        case radian Math.toRadians(i)
-//        case degree Math.toDegree(i)
-//    }
+   //public static void memory() {
 
-//   public memory() {
 //        case input  M+ adds the current displayed value in the memory and updates display
+
 //        case input  MC reset the memory
-//        case MRC recall the current value from memory to the display
-//    }
+       //case MRC recall the current value from memory to the display
+  //}
 
 
 

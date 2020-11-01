@@ -68,11 +68,9 @@ public class Menu {
                     Integer trigMenuOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (trigMenuOption) {
                         case 1:
-
                             SciFunctions.sin();
-                           runMenu();
-                          break;
-
+                            runMenu();
+                            break;
                         case 2:
                              SciFunctions.cos();
                             runMenu();
@@ -105,12 +103,12 @@ public class Menu {
                     Integer trigUnitOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (trigUnitOption) {
                         case 1:
-                            // SciFunctions.switchToDegrees();
-                            //runMenu();
+                             SciFunctions.degrees();
+                            runMenu();
                             break;
                         case 2:
-                            //SciFunctions.switchToRadians();
-                            //runMenu();
+                            SciFunctions.radians();
+                            runMenu();
                             break;
                         default:
                             Console.println("Invalid entry!");
@@ -149,20 +147,20 @@ public class Menu {
                     Integer switchDisplayOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (switchDisplayOption) {
                         case 1:
-                            //binary()
+                            //SciFunctions.binary()
                             //runMenu();
                             break;
                         case 2:
-                            //Octal()
-                            //runMenu();
+                            SciFunctions.octal();
+                            runMenu();
                             break;
                         case 3:
-                            //decimal()
-                            //runMenu();
+//                            SciFunctions.decimal();
+//                            runMenu();
                             break;
                         case 4:
-                            //hexidecimal()
-                            //runMenu();
+                            SciFunctions.hexadecimal();
+                            runMenu();
                             break;
                         default:
                             runMenu();
@@ -175,16 +173,16 @@ public class Menu {
                     Integer memoryOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (memoryOption) {
                         case 1:
-                            //addvalue();
-                            //runMenu();
+                            Memory.save();
+                            runMenu();
                             break;
                         case 2:
-                            //clear memory()
-                            //runMenu();
+                            Memory.clearMemory();
+                            runMenu();
                             break;
                         case 3:
-                            //Recall memory()
-                            //runMenu();
+                            Memory.checkMemory();
+                            runMenu();
                         default:
                             Console.println("Invalid entry!");
                             runMenu();
