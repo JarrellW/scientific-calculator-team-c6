@@ -4,38 +4,38 @@ public class SciFunctions {
     public static void sin() {
         double i = Console.getIntegerInput("Enter an integer");
         Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, Math.toRadians(Math.sin(i)));
+        Console.println("%s = %s", i, (Math.sin(i)));
 
     }
 
     public static void cos() {
         double i = Console.getIntegerInput("Enter an integer");
         Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, Math.toRadians(Math.cos(i)));
+        Console.println("%s = %s", i, (Math.cos(i)));
     }
 
     public static void tan() {
         double i = Console.getIntegerInput("Enter an integer");
         Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, Math.toRadians(Math.tan(i)));
+        Console.println("%s = %s", i, (Math.tan(i)));
     }
 
     public static void sec() {
         double i = Console.getIntegerInput("Enter an integer");
         Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, 1 / Math.toRadians(Math.cos(i)));
+        Console.println("%s = %s", i, 1 / (Math.cos(i)));
     }
 
     public static void csc() {
         double i = Console.getIntegerInput("Enter an integer");
         Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, 1 / Math.toRadians(Math.sin(i)));
+        Console.println("%s = %s", i, 1 / (Math.sin(i)));
     }
 
     public static void cot() {
         double i = Console.getIntegerInput("Enter an integer");
         Console.println("The user input %s as a integer", i);
-        Console.println("%s = %s", i, 1 / Math.toRadians(Math.tan(i)));
+        Console.println("%s = %s", i, 1 / (Math.tan(i)));
     }
 
     public static void log() {
@@ -81,8 +81,8 @@ public class SciFunctions {
     // Again not sure with how to go about mode changes that change the calculator and how it returns values
 
 //      public unitSwitch() {
-//        case radian Math.toRadians(num)
-//        case degree Math.toDegree(num)
+//        case radian Math.toRadians(i)
+//        case degree Math.toDegree(i)
 //    }
 
 //   public memory() {

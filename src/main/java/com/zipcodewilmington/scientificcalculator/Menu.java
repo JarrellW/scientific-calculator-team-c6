@@ -64,8 +64,8 @@ public class Menu {
                     Integer trigMenuOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (trigMenuOption) {
                         case 1:
-                            // SciFunctions.sin();
-                            //runMenu();
+                             SciFunctions.sin();
+                            runMenu();
                             break;
                         case 2:
                             // SciFunctions.cos();
