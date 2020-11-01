@@ -1,7 +1,7 @@
 package com.zipcodewilmington.scientificcalculator;
 import com.zipcodewilmington.scientificcalculator.Console;
 
-public class SciFunctions {
+public class SciFunctions extends MainApplication {
     public static void sin() {
         Double i = Console.getDoubleInput("Enter number");
         Console.println("sin(%s) = %s", i, (Math.sin(i)));
