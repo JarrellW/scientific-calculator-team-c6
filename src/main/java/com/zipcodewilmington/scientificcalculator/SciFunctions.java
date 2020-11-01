@@ -82,7 +82,7 @@ public class SciFunctions {
     // Again not sure with how to go about mode changes that change the calculator and how it returns values
 
 //      public unitSwitch() {
-//        case radian Math.toRadians(i)
+//        case1 radian Math.toRadians(i)
 //        case degree Math.toDegree(i)
 //    }
 

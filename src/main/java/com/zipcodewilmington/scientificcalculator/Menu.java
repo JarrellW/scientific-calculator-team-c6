@@ -68,15 +68,9 @@ public class Menu {
                     Integer trigMenuOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (trigMenuOption) {
                         case 1:
-<<<<<<< HEAD
-//                             SciFunctions.sin();
-//                            runMenu();
-//                            break;
-=======
-                             SciFunctions.sin();
+                            SciFunctions.sin();
                             runMenu();
                             break;
->>>>>>> 00671f3e1285645ac8b110a478098c551b2895bc
                         case 2:
                              SciFunctions.cos();
                             runMenu();
@@ -183,11 +177,11 @@ public class Menu {
                             //runMenu();
                             break;
                         case 2:
-                            //clear memory()
+                            //clearmemory()
                             //runMenu();
                             break;
                         case 3:
-                            //Recall memory()
+                            //Recallmemory()
                             //runMenu();
                         default:
                             Console.println("Invalid entry!");
