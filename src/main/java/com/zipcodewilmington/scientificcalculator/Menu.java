@@ -173,16 +173,16 @@ public class Menu {
                     Integer memoryOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (memoryOption) {
                         case 1:
-                            //addvalue();
-                            //runMenu();
+                            Memory.save();
+                            runMenu();
                             break;
                         case 2:
-                            //clearmemory()
-                            //runMenu();
+                            Memory.clearMemory();
+                            runMenu();
                             break;
                         case 3:
-                            //Recallmemory()
-                            //runMenu();
+                            Memory.checkMemory();
+                            runMenu();
                         default:
                             Console.println("Invalid entry!");
                             runMenu();
