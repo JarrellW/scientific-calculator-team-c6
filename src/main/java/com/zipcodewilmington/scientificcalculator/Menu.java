@@ -155,8 +155,8 @@ public class Menu {
                             runMenu();
                             break;
                         case 3:
-                            SciFunctions.decimal();
-                            runMenu();
+//                            SciFunctions.decimal();
+//                            runMenu();
                             break;
                         case 4:
                             SciFunctions.hexadecimal();
