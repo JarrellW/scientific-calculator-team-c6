@@ -61,8 +61,8 @@ class CalculatorTest {
     }
     @Test
     public void inverse() {
-        Double num1 = 25.0;
-        Double expectedResult = -25.0;
+        Double num1 = 3.0;
+        Double expectedResult = 0.3333333333333333;
         Double actualResult = Calculator.inverse(num1);
         assertEquals(expectedResult, actualResult);
     }

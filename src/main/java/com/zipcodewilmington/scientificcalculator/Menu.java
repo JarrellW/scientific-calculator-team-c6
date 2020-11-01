@@ -46,7 +46,8 @@ public class Menu {
                     break;
                 case 7:
                     userNum = Console.getDouble();
-                    displayNum = Calculator.toThePowerOf(displayNum,userNum);
+                    userNum2 = Console.getDouble();
+                    displayNum = Calculator.toThePowerOf(userNum,userNum2);
                     break;
                 case 8:
                     userNum = Console.getDouble();
@@ -54,7 +55,7 @@ public class Menu {
                     break;
                 case 9:
                     userNum = Console.getDouble();
-                    displayNum = Calculator.switchSign(displayNum);
+                    displayNum = Calculator.switchSign(userNum);
                     break;
                 case 10:
                     //factorial
@@ -180,6 +181,7 @@ public class Menu {
                     }
                     break;
                 case 18:
+                    Console.println("Good Bye");
                     running = false;
                     break;
 
@@ -192,12 +194,6 @@ public class Menu {
         }
 
     }
-   /* public static void clear() {
-        String clearer = "";
-        for (int i = 0; i < 50; i++) {
-            clearer += "\n";
-        }
-        System.out.print(clearer);
-    } */
+
 
 
