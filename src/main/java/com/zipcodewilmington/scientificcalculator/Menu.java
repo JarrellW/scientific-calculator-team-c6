@@ -8,6 +8,8 @@ public class Menu {
         Double displayNum = 0.0;
         Double userNum = 0.0;
         Double userNum2 = 0.0;
+        Integer userInt = 0;
+        String displaySting = "";
         while(running == true) {
             Console.println("Calculator Main Menu:");
             Console.printMenuOptions();
@@ -147,16 +149,20 @@ public class Menu {
                     Integer switchDisplayOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (switchDisplayOption) {
                         case 1:
-                            SciFunctions.binary();
+                            userInt = Console.getInteger();
+                            Console.println(SciFunctions.binary(userInt));
                             break;
                         case 2:
-                            SciFunctions.octal();
+                            userInt = Console.getInteger();
+                            Console.println(SciFunctions.octal(userInt));
                             break;
                         case 3:
-                            SciFunctions.decimal();
+                            userInt = Console.getInteger();
+                            Console.println(SciFunctions.decimal(userInt));
                             break;
                         case 4:
-                            SciFunctions.hexadecimal();
+                            userInt = Console.getInteger();
+                            Console.println(SciFunctions.hexadecimal(userInt));
                             break;
                         default:
                             Console.println("Invalid entry!");

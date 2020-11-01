@@ -62,34 +62,25 @@ public class SciFunctions {
         return result;
     }
 
-    public static void binary() {
-        Integer i = Console.getIntegerInput("Enter a number");
-        Console.println("Initial double value is " + i);
-        Console.println(Integer.toBinaryString(i));
+    public static String binary(Integer i) {
+        String result = Integer.toBinaryString(i);
+        return result;
     }
 
-    public static void octal() {
-        Integer i = Console.getIntegerInput("Enter a number");
-        Console.println("Initial double value is " + i);
-        Console.println(Integer.toOctalString(i));
+    public static String octal(Integer i) {
+        String result = Integer.toOctalString(i);
+        return result;
     }
 
-    public static void decimal() {
-        Integer i = Console.getIntegerInput("Enter a number");
-        Console.println("Initial double value is " + i);
-        Console.println("%s", i);
+    public static String decimal(Integer i) {
+        String result = i.toString();
+        return result;
     }
 
-    public static void hexadecimal() {
-        Integer i = Console.getIntegerInput("Enter a number");
-        Console.println("Initial double value is " + i);
-        Console.println(Integer.toHexString(i));
+    public static String hexadecimal(Integer i) {
+        String result = Integer.toHexString(i);
+        return result;
     }
-//    public static Integer hexadecimal(Integer i) {
-//        Integer i = (Integer.toHexString(i);
-//        Console.println(Integer.toHexString(i));
-//        return result;
-//    }
 
     public static Double radians(Double i) {
         Double result = Math.toRadians(i);
