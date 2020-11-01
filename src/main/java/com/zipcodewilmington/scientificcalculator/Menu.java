@@ -14,8 +14,7 @@ public class Menu {
             Console.println(displayNum.toString());
             switch (userInput) {
                 case 0:
-                    //clear();
-
+                    displayNum = 0.0;
                     break;
                 case 1:
                     userNum = Console.getDouble();
@@ -26,38 +25,41 @@ public class Menu {
                     displayNum = Calculator.subtract(displayNum,userNum);
                     break;
                 case 3:
-                    Calculator.multiply();
+                    userNum = Console.getDouble();
+                    displayNum = Calculator.multiply(displayNum,userNum);
                     break;
                 case 4:
-                    Calculator.divide();
+                    userNum = Console.getDouble();
+                    displayNum = Calculator.divide(displayNum,userNum);
                     break;
                 case 5:
-                    Calculator.square();
+                    userNum = Console.getDouble();
+                    displayNum = Calculator.square(userNum);
                     break;
                 case 6:
-                    Calculator.squareRoot();
+                    userNum = Console.getDouble();
+                    displayNum = Calculator.squareRoot(userNum);
                     break;
                 case 7:
-                    Calculator.toThePowerOf();
+                    userNum = Console.getDouble();
+                    displayNum = Calculator.toThePowerOf(displayNum,userNum);
                     break;
                 case 8:
-                    Calculator.inverse();
+                    userNum = Console.getDouble();
+                    displayNum = Calculator.inverse(userNum);
                     break;
                 case 9:
-                    //Calculator.switchSign();
-                    //runMenu();
+                    //userNum = Console.getDouble();
+                    //displayNum = Calculator.switchSign(displayNum,userNum);
                     break;
                 case 10:
-                    //Calculator.factorial();
-                    //runMenu();
+                    //factorial
                     break;
                 case 11:
                     //our extra feature
-                    //runMenu();
                     break;
                 case 12:
                     //our second extra feature
-                    //runMenu();
                     break;
                 case 13:
                     Console.printTrigFunctionsMenuOptions();
