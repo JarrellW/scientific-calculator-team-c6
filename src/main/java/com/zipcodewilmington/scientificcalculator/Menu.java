@@ -68,28 +68,34 @@ public class Menu {
                     Integer trigMenuOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (trigMenuOption) {
                         case 1:
+<<<<<<< HEAD
 //                             SciFunctions.sin();
 //                            runMenu();
 //                            break;
+=======
+                             SciFunctions.sin();
+                            runMenu();
+                            break;
+>>>>>>> 00671f3e1285645ac8b110a478098c551b2895bc
                         case 2:
-                            // SciFunctions.cos();
-                            //runMenu();
+                             SciFunctions.cos();
+                            runMenu();
                             break;
                         case 3:
-                            //SciFunctions.tan();
-                            //runMenu();
+                            SciFunctions.tan();
+                            runMenu();
                             break;
                         case 4:
-                            //  SciFunctions.sec();
-                            //runMenu();
+                              SciFunctions.sec();
+                            runMenu();
                             break;
                         case 5:
-                            //SciFunctions.csc();
-                            //runMenu();
+                            SciFunctions.csc();
+                            runMenu();
                             break;
                         case 6:
-                            //SciFunctions.cot();
-                            //runMenu();
+                            SciFunctions.cot();
+                            runMenu();
                             break;
                         default:
                             Console.println("Invalid entry!");
@@ -121,20 +127,20 @@ public class Menu {
                     Integer logFuncOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (logFuncOption) {
                         case 1:
-                            // SciFunctions.log()
-                            //runMenu();
+                             SciFunctions.log();
+                            runMenu();
                             break;
                         case 2:
-                            // SciFunctions.naturalLog()
-                            //runMenu();
+                             SciFunctions.naturalLog();
+                            runMenu();
                             break;
                         case 3:
-                            //SciFunctions.inverseLog()
-                            //runMenu();
+                            SciFunctions.inverseLog();
+                            runMenu();
                             break;
                         case 4:
-                            //SciFunctions.SciFunctions.inverseNaturalLog()
-                            //runMenu();
+                            SciFunctions.inverseNaturalLog();
+                            runMenu();
                             break;
                         default:
                             Console.println("Invalid entry!");
