@@ -4,17 +4,16 @@ import com.zipcodewilmington.scientificcalculator.Console;
 
 public class Calculator {
 
-    public static void add() {
-        Double i = Console.getDoubleInput("Enter first number");
-        Double j = Console.getDoubleInput("Enter second number");
-        Console.println("%s + %s = %s", i, j, i + j);
-
+    public static Double add(Double i, Double j) {
+        Double result = i + j;
+        Console.println("%s + %s = %s", i, j, result);
+        return result;
     }
 
-    public static void subtract() {
-        Double i = Console.getDoubleInput("Enter first number");
-        Double j = Console.getDoubleInput("Enter second number");
-        Console.println("%s - %s = %s", i, j, i - j);
+    public static Double subtract(Double i, Double j) {
+        Double result = i + j;
+        Console.println("%s - %s = %s", i, j, result);
+        return result;
     }
 
     public static void multiply() {

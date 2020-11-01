@@ -4,48 +4,44 @@ import java.util.Scanner;
 
 public class Menu {
     public static void runMenu() {
-      boolean quit = false;
-      while (quit == false ) {
-
+        boolean running = true;
+        Double displayNum = 0.0;
+        Double userNum = 0.0;
+        while(running == true) {
             Console.println("Calculator Main Menu:");
             Console.printMenuOptions();
             Integer userInput = Console.getIntegerInput("Enter Option Number: ");
+            Console.println(displayNum.toString());
             switch (userInput) {
                 case 0:
-                    clear();
-                    runMenu();
+                    //clear();
+
                     break;
                 case 1:
-                    Calculator.add();
-                    runMenu();
+                    userNum = Console.getDouble();
+                    displayNum = Calculator.add(displayNum,userNum);
                     break;
                 case 2:
-                    Calculator.subtract();
-                    runMenu();
+                    userNum = Console.getDouble();
+                    displayNum = Calculator.subtract(displayNum,userNum);
                     break;
                 case 3:
                     Calculator.multiply();
-                    runMenu();
                     break;
                 case 4:
                     Calculator.divide();
-                    runMenu();
                     break;
                 case 5:
                     Calculator.square();
-                    runMenu();
                     break;
                 case 6:
                     Calculator.squareRoot();
-                    runMenu();
                     break;
                 case 7:
                     Calculator.toThePowerOf();
-                    runMenu();
                     break;
                 case 8:
                     Calculator.inverse();
-                    runMenu();
                     break;
                 case 9:
                     //Calculator.switchSign();
@@ -69,31 +65,24 @@ public class Menu {
                     switch (trigMenuOption) {
                         case 1:
                             SciFunctions.sin();
-                            runMenu();
                             break;
                         case 2:
-                             SciFunctions.cos();
-                            runMenu();
+                            SciFunctions.cos();
                             break;
                         case 3:
                             SciFunctions.tan();
-                            runMenu();
                             break;
                         case 4:
-                              SciFunctions.sec();
-                            runMenu();
+                            SciFunctions.sec();
                             break;
                         case 5:
                             SciFunctions.csc();
-                            runMenu();
                             break;
                         case 6:
                             SciFunctions.cot();
-                            runMenu();
                             break;
                         default:
                             Console.println("Invalid entry!");
-                            runMenu();
                             break;
                     }
 
@@ -103,16 +92,13 @@ public class Menu {
                     Integer trigUnitOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (trigUnitOption) {
                         case 1:
-                             SciFunctions.degrees();
-                            runMenu();
+                            SciFunctions.degrees();
                             break;
                         case 2:
                             SciFunctions.radians();
-                            runMenu();
                             break;
                         default:
                             Console.println("Invalid entry!");
-                            //runMenu();
                             break;
                     }
                     break;
@@ -121,24 +107,19 @@ public class Menu {
                     Integer logFuncOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (logFuncOption) {
                         case 1:
-                             SciFunctions.log();
-                            runMenu();
+                            SciFunctions.log();
                             break;
                         case 2:
-                             SciFunctions.naturalLog();
-                            runMenu();
+                            SciFunctions.naturalLog();
                             break;
                         case 3:
                             SciFunctions.inverseLog();
-                            runMenu();
                             break;
                         case 4:
                             SciFunctions.inverseNaturalLog();
-                            runMenu();
                             break;
                         default:
                             Console.println("Invalid entry!");
-                            runMenu();
                             break;
                     }
                     break;
@@ -148,22 +129,17 @@ public class Menu {
                     switch (switchDisplayOption) {
                         case 1:
                             //SciFunctions.binary()
-                            //runMenu();
                             break;
                         case 2:
                             SciFunctions.octal();
-                            runMenu();
                             break;
                         case 3:
 //                            SciFunctions.decimal();
-//                            runMenu();
                             break;
                         case 4:
                             SciFunctions.hexadecimal();
-                            runMenu();
                             break;
                         default:
-                            runMenu();
                             Console.println("Invalid entry!");
                             break;
                     }
@@ -174,41 +150,36 @@ public class Menu {
                     switch (memoryOption) {
                         case 1:
                             Memory.save();
-                            runMenu();
                             break;
                         case 2:
                             Memory.clearMemory();
-                            runMenu();
                             break;
                         case 3:
                             Memory.checkMemory();
-                            runMenu();
                         default:
                             Console.println("Invalid entry!");
-                            runMenu();
                             break;
                     }
                     break;
                 case 18:
-                break;
+                    running = false;
+                    break;
 
                 default:
                     Console.println("Invalid entry!");
-                    runMenu();
                     break;
             }
+        }
 
-            quit = true;
         }
 
     }
-    public static void clear() {
+   /* public static void clear() {
         String clearer = "";
         for (int i = 0; i < 50; i++) {
             clearer += "\n";
         }
         System.out.print(clearer);
-    }
+    } */
 
-}
 
