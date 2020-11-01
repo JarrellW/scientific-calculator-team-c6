@@ -35,9 +35,11 @@ public class Calculator {
         Console.println("The user input %s as a integer", j);
         if (j == 0) {
             Console.println("Err can't divide by zero");
+            divide();
         } else {
             Console.println("%s / %s = %s", i, j, i / j);
         }
+
 
     }
 
@@ -66,6 +68,7 @@ public class Calculator {
         Console.println("The user input %s as a integer", i);
         if (i == 0) {
             Console.println("Err can't divide by zero");
+            inverse();
         } else {
             Console.println("Inverse of %s = %s", i, 1 / i);
         }
