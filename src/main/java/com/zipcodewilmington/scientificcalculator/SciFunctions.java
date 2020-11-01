@@ -1,3 +1,4 @@
+package com.zipcodewilmington.scientificcalculator;
 import com.zipcodewilmington.scientificcalculator.Console;
 
 public class SciFunctions {
