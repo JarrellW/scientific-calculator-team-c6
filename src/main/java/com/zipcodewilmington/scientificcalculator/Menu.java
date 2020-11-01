@@ -71,19 +71,24 @@ public class Menu {
                               displayNum = SciFunctions.sin(userNum);
                               break;
                         case 2:
-                            SciFunctions.cos();
+                            userNum = Console.getDouble();
+                            displayNum = SciFunctions.cos(userNum);
                             break;
                         case 3:
-                            SciFunctions.tan();
+                            userNum = Console.getDouble();
+                            displayNum = SciFunctions.tan(userNum);
                             break;
                         case 4:
-                            SciFunctions.sec();
+                            userNum = Console.getDouble();
+                            displayNum = SciFunctions.sec(userNum);
                             break;
                         case 5:
-                            SciFunctions.csc();
+                            userNum = Console.getDouble();
+                            displayNum = SciFunctions.csc(userNum);
                             break;
                         case 6:
-                            SciFunctions.cot();
+                            userNum = Console.getDouble();
+                            displayNum = SciFunctions.cot(userNum);
                             break;
                         default:
                             Console.println("Invalid entry!");
@@ -96,10 +101,12 @@ public class Menu {
                     Integer trigUnitOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (trigUnitOption) {
                         case 1:
-                            SciFunctions.degrees();
+                            userNum = Console.getDouble();
+                            displayNum = SciFunctions.degrees(userNum);
                             break;
                         case 2:
-                            SciFunctions.radians();
+                            userNum = Console.getDouble();
+                            displayNum = SciFunctions.radians(userNum);
                             break;
                         default:
                             Console.println("Invalid entry!");
@@ -111,16 +118,20 @@ public class Menu {
                     Integer logFuncOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (logFuncOption) {
                         case 1:
-                            SciFunctions.log();
+                            userNum = Console.getDouble();
+                            displayNum = SciFunctions.log(userNum);
                             break;
                         case 2:
-                            SciFunctions.naturalLog();
+                            userNum = Console.getDouble();
+                            displayNum = SciFunctions.naturalLog(userNum);
                             break;
                         case 3:
-                            SciFunctions.inverseLog();
+                            userNum = Console.getDouble();
+                            displayNum = SciFunctions.inverseLog(userNum);
                             break;
                         case 4:
-                            SciFunctions.inverseNaturalLog();
+                            userNum = Console.getDouble();
+                            displayNum = SciFunctions.inverseNaturalLog(userNum);
                             break;
                         default:
                             Console.println("Invalid entry!");

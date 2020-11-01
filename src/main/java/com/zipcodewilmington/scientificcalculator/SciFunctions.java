@@ -8,58 +8,66 @@ public class SciFunctions {
         return result;
     }
 
-    public static void cos() {
-        Double i = Console.getDoubleInput("Enter a number");
+    public static Double cos(Double i) {
+        Double result = Math.cos(i);
         Console.println("cos(%s) = %s", i, (Math.cos(i)));
+        return result;
     }
 
-    public static void tan() {
-        Double i = Console.getDoubleInput("Enter a number");
+    public static Double tan(Double i) {
+        Double result = Math.tan(i);
         Console.println("tan(%s) = %s", i, (Math.tan(i)));
+        return result;
     }
 
-    public static void sec() {
-        Double i = Console.getDoubleInput("Enter a number");
+    public static Double sec(Double i) {
+        Double result = (1 / Math.cos(i));
         Console.println("sec(%s) = %s", i, 1 / (Math.cos(i)));
+        return result;
     }
 
-    public static void csc() {
-        Double i = Console.getDoubleInput("Enter a number");
+    public static Double csc(Double i) {
+        Double result = (1 / Math.sin(i));
         Console.println("csc(%s) = %s", i, 1 / (Math.sin(i)));
+        return result;
     }
 
-    public static void cot() {
-        Double i = Console.getDoubleInput("Enter a number");
+    public static Double cot(Double i) {
+        Double result = (1 / Math.tan(i));
         Console.println("cot(%s) = %s", i, 1 / (Math.tan(i)));
+        return result;
     }
 
-    public static void log() {
-        Double i = Console.getDoubleInput("Enter a number");
-        Console.println("log(%s) = %s", i, Math.log10(i));
-
+    public static Double log(Double i) {
+        Double result = Math.log10(i);
+        Console.println("log(%s) = %s", Math.log10(i));
+        return result;
     }
 
-    public static void naturalLog() {
-        Double i = Console.getDoubleInput("Enter a number");
-        Console.println("ln(%s) = %s", i, Math.log(i));
-
+    public static Double naturalLog(Double i) {
+        Double result = Math.log(i);
+        Console.println("l(%s) = %s", Math.log(i));
+        return result;
     }
 
-    public static void inverseLog() {
-        Double i = Console.getDoubleInput("Enter a number");
-        Console.println("inverse log(%s) = %s", i, (Math.exp(Math.log10(i))));
-
+    public static Double inverseLog(Double i) {
+        Double result = (Math.exp(Math.log10(i)));
+        Console.println("log(%s) = %s", (Math.exp(Math.log10(i))));
+        return result;
     }
 
-    public static void inverseNaturalLog() {
-        Double i = Console.getDoubleInput("Enter a number");
-        Console.println("inverse ln(%s) = %s", i, (Math.exp(Math.log(i))));
+    public static Double inverseNaturalLog(Double i) {
+        Double result = (Math.exp(Math.log(i)));
+        Console.println("log(%s) = %s", (Math.exp(Math.log(i))));
+        return result;
     }
- public static void binary() {
-      Integer i = Console.getIntegerInput("Enter a number");
-      Console.println("Initial double value is " + i);
-     Console.println(Integer.toBinaryString(i));
-  }
+
+    public static void binary() {
+        Integer i = Console.getIntegerInput("Enter a number");
+        Console.println("Initial double value is " + i);
+        Console.println(Integer.toBinaryString(i));
+    }
+
     public static void octal() {
         Integer i = Console.getIntegerInput("Enter a number");
         Console.println("Initial double value is " + i);
@@ -77,16 +85,21 @@ public class SciFunctions {
         Console.println("Initial double value is " + i);
         Console.println(Integer.toHexString(i));
     }
+//    public static Integer hexadecimal(Integer i) {
+//        Integer i = (Integer.toHexString(i);
+//        Console.println(Integer.toHexString(i));
+//        return result;
+//    }
 
-    public static void radians() {
-        Integer i = Console.getIntegerInput("Enter a number");
-        Console.println("Initial double value is " + i);
-        Console.println("%s", i, Math.toRadians(i));
+    public static Double radians(Double i) {
+        Double result = Math.toRadians(i);
+        Console.println("%s", Math.toRadians(i));
+        return result;
     }
-    public static void degrees() {
-        Integer i = Console.getIntegerInput("Enter a number");
-        Console.println("Initial double value is " + i);
-        Console.println("%s", i, Math.toDegrees(i));
+    public static Double degrees(Double i) {
+        Double result = Math.toDegrees(i);
+        Console.println("%s",  Math.toDegrees(i));
+        return result;
     }
 }
 
