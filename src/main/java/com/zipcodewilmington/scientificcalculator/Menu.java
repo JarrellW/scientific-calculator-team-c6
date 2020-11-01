@@ -66,7 +66,7 @@ public class Menu {
 //                        case 1:
 //                            userNum = Console.getDouble();
 //                            displayNum = SciFunctions.sin(userNum);
-                            break;
+//                            break;
                         case 2:
                             SciFunctions.cos();
                             break;
