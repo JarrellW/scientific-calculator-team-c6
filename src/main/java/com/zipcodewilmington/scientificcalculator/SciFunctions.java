@@ -2,11 +2,11 @@ package com.zipcodewilmington.scientificcalculator;
 import com.zipcodewilmington.scientificcalculator.Console;
 
 public class SciFunctions {
-//    public static void sin() {
-//        Double i = Math.sin(i), result;
-//        Console.println("sin(%s) = %s", i, (Math.sin(i)));
-//        return result;
-//    }
+    public static Double sin(Double i) {
+        Double result = Math.sin(i);
+        Console.println("sin(%s) = %s", i, (Math.sin(i)));
+        return result;
+    }
 
     public static void cos() {
         Double i = Console.getDoubleInput("Enter a number");

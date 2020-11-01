@@ -13,4 +13,12 @@ class CalculatorTest {
         Double  actualResult = Calculator.add(num1, num2);
         assertEquals(expectedResult, actualResult);
     }
+    @Test
+    public void subtract() {
+        Double num1 = 4.0;
+        Double num2 = 6.0;
+        Double expectedResult = -2.0;
+        Double  actualResult = Calculator.subtract(num1, num2);
+        assertEquals(expectedResult, actualResult);
+    }
 }
