@@ -8,7 +8,7 @@ import jdk.nashorn.internal.runtime.ScriptFunction;
 public class MainApplication {
     public static void main(String[] args) {
         Console.println("Calculator Main Menu:");
-        Console.printMenuOptions();
+
         Integer userInput = Console.getIntegerInput("Enter Option Number: ");
         switch(userInput) {
         case 1:
