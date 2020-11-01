@@ -35,31 +35,26 @@ public class Calculator {
 
     public static Double square(Double i) {
         Double result = Math.pow(i, 2);
-        Console.println("%s ^ 2 = %s", i, Math.pow(i, 2));
+        Console.println("%s ^ 2 = %s", i, result);
         return result;
     }
 
     public static Double squareRoot(Double i) {
         Double result = Math.sqrt(i);
-        Console.println("%s = %s", i, Math.sqrt(i));
+        Console.println("%s = %s", i, result);
         return result;
     }
 
     public static Double toThePowerOf(Double i, Double j) {
         Double result = Math.pow(i, j);
-        Console.println("%s ^ %s = %s", i, j, Math.pow(i, j));
+        Console.println("%s ^ %s = %s", i, j, result);
         return result;
     }
 
     public static Double inverse(Double i) {
-        if (i == 0) {
-            Console.println("Err can't divide by zero");
-            return 0.0;
-        } else {
-            Double result = 1 / i;
-            Console.println("Inverse of %s = %s", i, 1 / i);
-            return result;
-        }
+        Double result = i * -1;
+        Console.println("Inverse is %s",result);
+        return result;
 
     }
 }
