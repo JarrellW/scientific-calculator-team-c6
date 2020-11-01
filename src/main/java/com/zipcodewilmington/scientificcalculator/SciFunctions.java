@@ -83,7 +83,7 @@ public class SciFunctions {
         Console.println("Initial double value is " + i);
         Console.println("%s", i, Math.toRadians(i));
     }
-    public static void degree() {
+    public static void degrees() {
         Integer i = Console.getIntegerInput("Enter a number");
         Console.println("Initial double value is " + i);
         Console.println("%s", i, Math.toDegrees(i));

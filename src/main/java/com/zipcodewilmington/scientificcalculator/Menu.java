@@ -103,12 +103,12 @@ public class Menu {
                     Integer trigUnitOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (trigUnitOption) {
                         case 1:
-                            // SciFunctions.switchToDegrees();
-                            //runMenu();
+                             SciFunctions.degrees();
+                            runMenu();
                             break;
                         case 2:
-                            //SciFunctions.switchToRadians();
-                            //runMenu();
+                            SciFunctions.radians();
+                            runMenu();
                             break;
                         default:
                             Console.println("Invalid entry!");
