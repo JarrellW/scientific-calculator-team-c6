@@ -11,6 +11,10 @@ public class Menu {
             Console.printMenuOptions();
             Integer userInput = Console.getIntegerInput("Enter Option Number: ");
             switch (userInput) {
+                case 0:
+                    clear();
+                    runMenu();
+                    break;
                 case 1:
                     Calculator.add();
                     runMenu();
@@ -64,9 +68,15 @@ public class Menu {
                     Integer trigMenuOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (trigMenuOption) {
                         case 1:
+<<<<<<< HEAD
+//                             SciFunctions.sin();
+//                            runMenu();
+//                            break;
+=======
                              SciFunctions.sin();
                             runMenu();
                             break;
+>>>>>>> 00671f3e1285645ac8b110a478098c551b2895bc
                         case 2:
                              SciFunctions.cos();
                             runMenu();
@@ -197,6 +207,13 @@ public class Menu {
             quit = true;
         }
 
+    }
+    public static void clear() {
+        String clearer = "";
+        for (int i = 0; i < 50; i++) {
+            clearer += "\n";
+        }
+        System.out.print(clearer);
     }
 
 }
