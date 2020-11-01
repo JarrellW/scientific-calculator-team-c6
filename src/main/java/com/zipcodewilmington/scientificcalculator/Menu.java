@@ -65,9 +65,10 @@ public class Menu {
                     Console.printTrigFunctionsMenuOptions();
                     Integer trigMenuOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (trigMenuOption) {
-                        case 1:
-                            SciFunctions.sin();
-                            break;
+//                        case 1:
+//                            userNum = Console.getDouble();
+//                            displayNum = SciFunctions.sin(userNum);
+//                            break;
                         case 2:
                             SciFunctions.cos();
                             break;
@@ -130,13 +131,13 @@ public class Menu {
                     Integer switchDisplayOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (switchDisplayOption) {
                         case 1:
-                            //SciFunctions.binary()
+                            SciFunctions.binary();
                             break;
                         case 2:
                             SciFunctions.octal();
                             break;
                         case 3:
-//                            SciFunctions.decimal();
+                            SciFunctions.decimal();
                             break;
                         case 4:
                             SciFunctions.hexadecimal();
