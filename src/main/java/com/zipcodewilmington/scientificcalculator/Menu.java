@@ -147,20 +147,20 @@ public class Menu {
                     Integer switchDisplayOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (switchDisplayOption) {
                         case 1:
-                            //binary()
+                            //SciFunctions.binary()
                             //runMenu();
                             break;
                         case 2:
-                            //Octal()
-                            //runMenu();
+                            SciFunctions.octal();
+                            runMenu();
                             break;
                         case 3:
-                            //decimal()
-                            //runMenu();
+                            SciFunctions.decimal();
+                            runMenu();
                             break;
                         case 4:
-                            //hexidecimal()
-                            //runMenu();
+                            SciFunctions.hexadecimal();
+                            runMenu();
                             break;
                         default:
                             runMenu();
