@@ -1,47 +1,59 @@
 import com.zipcodewilmington.scientificcalculator.Console;
 
 public class SciFunctions {
-
-// These are not functional yet need to figure out the formatting
     public static void sin() {
-        Integer i = Console.getIntegerInput("Enter an integer");
-        Console.println("%s ", i, Math.toRadians(Math.sin(i)));
+        double i = Console.getIntegerInput("Enter an integer");
+        Console.println("The user input %s as a integer", i);
+        Console.println("%s = %s", i, Math.toRadians(Math.sin(i)));
+
     }
     public static void cos() {
-        Integer i = Console.getIntegerInput("Enter an integer");
-        Console.println("%s ", i, Math.toRadians(Math.cos(i)));
+        double i = Console.getIntegerInput("Enter an integer");
+        Console.println("The user input %s as a integer", i);
+        Console.println("%s = %s", i, Math.toRadians(Math.cos(i)));
     }
     public static void tan() {
-        Integer i = Console.getIntegerInput("Enter an integer");
-        Console.println("%s ", i, Math.toRadians(Math.tan(i)));
+        double i = Console.getIntegerInput("Enter an integer");
+        Console.println("The user input %s as a integer", i);
+        Console.println("%s = %s", i, Math.toRadians(Math.tan(i)));
     }
     public static void sec() {
-        Integer i = Console.getIntegerInput("Enter an integer");
-        Console.println("%s ", i, 1/Math.toRadians(Math.sin(i)));
+        double i = Console.getIntegerInput("Enter an integer");
+        Console.println("The user input %s as a integer", i);
+        Console.println("%s = %s", i, 1/Math.toRadians(Math.cos(i)));
     }
     public static void csc() {
-        Integer i = Console.getIntegerInput("Enter an integer");
-        Console.println("%s ", i, 1/Math.toRadians(Math.cos(i)));
+        double i = Console.getIntegerInput("Enter an integer");
+        Console.println("The user input %s as a integer", i);
+        Console.println("%s = %s", i, 1/Math.toRadians(Math.sin(i)));
     }
     public static void cot() {
-        Integer i = Console.getIntegerInput("Enter an integer");
-        Console.println("%s ", i, 1/Math.toRadians(Math.tan(i)));
+        double i = Console.getIntegerInput("Enter an integer");
+        Console.println("The user input %s as a integer", i);
+        Console.println("%s = %s", i, 1/Math.toRadians(Math.tan(i)));
     }
     public static void log() {
-        Integer i = Console.getIntegerInput("Enter an integer");
-        Console.println("%s ", Math.log10(i));
+        double i = Console.getIntegerInput("Enter an integer");
+        Console.println("The user input %s as a integer", i);
+        Console.println("%s = %s", i, Math.log10(i));
+
     }
     public static void naturalLog() {
-        Integer i = Console.getIntegerInput("Enter an integer");
-        Console.println("%s ", Math.log(i));
+        double i = Console.getIntegerInput("Enter an integer");
+        Console.println("The user input %s as a integer", i);
+        Console.println("%s = %s", i, Math.log(i));
+
     }
     public static void inverseLog() {
-        Integer i = Console.getIntegerInput("Enter an integer");
-        Console.println("%s ", (Math.exp(Math.log10(i))));
+        double i = Console.getIntegerInput("Enter an integer");
+        Console.println("The user input %s as a integer", i);
+        Console.println("%s = %s", i, (Math.exp(Math.log10(i))));
+
     }
     public static void inverseNaturalLog() {
-        Integer i = Console.getIntegerInput("Enter an integer");
-        Console.println("%s ", (Math.exp(Math.log(i))));
+        double i = Console.getIntegerInput("Enter an integer");
+        Console.println("The user input %s as a integer", i);
+        Console.println("%s = %s", i, (Math.exp(Math.log(i))));
     }
     // Mode switching not sure how to use this yet understand changing the string formatting
 //      public static void binary() {

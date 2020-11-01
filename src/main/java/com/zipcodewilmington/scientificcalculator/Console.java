@@ -51,4 +51,12 @@ public class Console {
         Console.println("Logarithmic Functions Menu: \n" +
                 "1:Log 2:Inverse Logarithm 3:Natural Logarithm 4:Inverse Natural Logarithm");
     }
+    public static void switchDisplayModeMenu(){
+        Console.println("Switch Number Display Menu: \n" +
+                "1:Binary 2:Octal 3:Decimal 4:Hexadecimal");
+    }
+    public static void memorySettingsMenu(){
+        Console.println("Memory Settings Menu: \n" +
+                "1:Add Value To Memory 2:Clear Memory 3:Recall Memory");
+    };
 }
