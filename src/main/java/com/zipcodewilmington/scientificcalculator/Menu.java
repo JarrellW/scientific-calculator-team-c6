@@ -15,6 +15,7 @@ public class Menu {
             switch (userInput) {
                 case 0:
                     displayNum = 0.0;
+                    Console.println("Cleared \n0.0");
                     break;
                 case 1:
                     userNum = Console.getDouble();
