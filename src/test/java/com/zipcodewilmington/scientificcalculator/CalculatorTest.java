@@ -29,4 +29,41 @@ class CalculatorTest {
         Double  actualResult = Calculator.multiply(num1, num2);
         assertEquals(expectedResult, actualResult);
     }
+    @Test
+    public void divide() {
+        Double num1 = 55.8;
+        Double num2 = 6.2;
+        Double expectedResult = 9.0;
+        Double  actualResult = Calculator.divide(num1, num2);
+        assertEquals(expectedResult, actualResult);
+    }
+    @Test
+    public void square() {
+        Double num1 = 33.0;
+        Double expectedResult = 1089.0;
+        Double  actualResult = Calculator.square(num1);
+        assertEquals(expectedResult, actualResult);
+    }
+    @Test
+    public void squareRoot() {
+        Double num1 = 121.0;
+        Double expectedResult = 11.0;
+        Double  actualResult = Calculator.squareRoot(num1);
+        assertEquals(expectedResult, actualResult);
+    }
+    @Test
+    public void toThePowerOf() {
+        Double num1 = 8.0;
+        Double num2 = 4.0;
+        Double expectedResult = 4096.0;
+        Double actualResult = Calculator.toThePowerOf(num1, num2);
+        assertEquals(expectedResult, actualResult);
+    }
+    @Test
+    public void inverse() {
+        Double num1 = 25.0;
+        Double expectedResult = -25.0;
+        Double actualResult = Calculator.inverse(num1);
+        assertEquals(expectedResult, actualResult);
+    }
 }
