@@ -53,8 +53,8 @@ public class Menu {
                     displayNum = Calculator.inverse(userNum);
                     break;
                 case 9:
-                    //userNum = Console.getDouble();
-                    //displayNum = Calculator.switchSign(displayNum,userNum);
+                    userNum = Console.getDouble();
+                    displayNum = Calculator.switchSign(displayNum);
                     break;
                 case 10:
                     //factorial

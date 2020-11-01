@@ -52,10 +52,15 @@ public class Calculator {
     }
 
     public static Double inverse(Double i) {
-        Double result = i * -1;
+        Double result = 1 / i;
         Console.println("Inverse is %s",result);
         return result;
 
+    }
+    public static Double switchSign(Double i) {
+        Double result = i *= -1;
+        Console.println("%s", result);
+        return result;
     }
 }
 
