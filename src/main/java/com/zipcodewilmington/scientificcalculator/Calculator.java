@@ -3,37 +3,30 @@ package com.zipcodewilmington.scientificcalculator;
 import com.zipcodewilmington.scientificcalculator.Console;
 
 public class Calculator {
+
     public static void add() {
-        Integer i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        Integer j = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", j);
+        Double i = Console.getDoubleInput("Enter first number");
+        Double j = Console.getDoubleInput("Enter second number");
         Console.println("%s + %s = %s", i, j, i + j);
 
     }
 
     public static void subtract() {
-        Integer i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        Integer j = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", j);
+        Double i = Console.getDoubleInput("Enter first number");
+        Double j = Console.getDoubleInput("Enter second number");
         Console.println("%s - %s = %s", i, j, i - j);
     }
 
     public static void multiply() {
-        long i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        long j = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", j);
-        Console.println("%s * %s = %s", i,j, i * j);
+        Double i = Console.getDoubleInput("Enter first number");
+        Double j = Console.getDoubleInput("Enter second number");
+        Console.println("%s * %s = %s", i, j, i * j);
     }
 
     public static void divide() {
-        double i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        double j = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", j);
-        if (j == 0) {
+        Double i = Console.getDoubleInput("Enter first number");
+        Double j = Console.getDoubleInput("Enter second number");
+        if (j == 0 || i == 0) {
             Console.println("Err can't divide by zero");
             divide();
         } else {
@@ -44,28 +37,23 @@ public class Calculator {
     }
 
     public static void square() {
-        double i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
+        Double i = Console.getDoubleInput("Enter number");
         Console.println("%s ^ 2 = %s", i, Math.pow(i, 2));
     }
 
     public static void squareRoot() {
-        double i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
+        Double i = Console.getDoubleInput("Enter number");
         Console.println("%s = %s", i, Math.sqrt(i));
     }
 
     public static void toThePowerOf() {
-        Integer i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
-        Integer j = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", j);
+        Double i = Console.getDoubleInput("Enter base number");
+        Double j = Console.getDoubleInput("Enter exponent number");
         Console.println("%s ^ %s = %s", i, j, Math.pow(i, j));
     }
 
     public static void inverse() {
-        double i = Console.getIntegerInput("Enter an integer");
-        Console.println("The user input %s as a integer", i);
+        Double i = Console.getDoubleInput("Enter number");
         if (i == 0) {
             Console.println("Err can't divide by zero");
             inverse();
