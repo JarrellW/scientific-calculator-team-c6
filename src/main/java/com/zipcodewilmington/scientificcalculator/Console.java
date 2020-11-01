@@ -68,4 +68,8 @@ public class Console {
         Double i = Console.getDoubleInput("Enter number");
         return i;
     }
+    public static Integer getInteger(){
+        Integer i = Console.getIntegerInput("Enter number");
+        return i;
+    }
 }

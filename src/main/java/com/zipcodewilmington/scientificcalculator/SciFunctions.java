@@ -2,11 +2,11 @@ package com.zipcodewilmington.scientificcalculator;
 import com.zipcodewilmington.scientificcalculator.Console;
 
 public class SciFunctions {
-    public static void sin() {
-        Double i = Console.getDoubleInput("Enter number");
-        Console.println("sin(%s) = %s", i, (Math.sin(i)));
-
-    }
+//    public static void sin() {
+//        Double i = Math.sin(i), result;
+//        Console.println("sin(%s) = %s", i, (Math.sin(i)));
+//        return result;
+//    }
 
     public static void cos() {
         Double i = Console.getDoubleInput("Enter a number");
@@ -66,11 +66,11 @@ public class SciFunctions {
         Console.println(Integer.toOctalString(i));
     }
 
-//    public static void decimal() {
-//        Integer i = Console.getIntegerInput("Enter a number");
-//        Console.println("Initial double value is " + i);
-//        Console.println(parseInt(i));
-//    }
+    public static void decimal() {
+        Integer i = Console.getIntegerInput("Enter a number");
+        Console.println("Initial double value is " + i);
+        Console.println("%s", i);
+    }
 
     public static void hexadecimal() {
         Integer i = Console.getIntegerInput("Enter a number");
@@ -90,13 +90,7 @@ public class SciFunctions {
     }
 }
 
-   //public static void memory() {
 
-//        case input  M+ adds the current displayed value in the memory and updates display
-
-//        case input  MC reset the memory
-       //case MRC recall the current value from memory to the display
-  //}
 
 
 
