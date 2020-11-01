@@ -76,11 +76,13 @@ public class SciFunctions {
 //        case degree Math.toDegree(i)
 //    }
 
-//   public memory() {
+   //public static void memory() {
+
 //        case input  M+ adds the current displayed value in the memory and updates display
+
 //        case input  MC reset the memory
-//        case MRC recall the current value from memory to the display
-//    }
+       //case MRC recall the current value from memory to the display
+  //}
 
 
 
