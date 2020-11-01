@@ -55,24 +55,30 @@ public class SciFunctions {
         Double i = Console.getDoubleInput("Enter a number");
         Console.println("inverse ln(%s) = %s", i, (Math.exp(Math.log(i))));
     }
-}
+
     // Mode switching not sure how to use this yet understand changing the string formatting
 //      public static void binary() {
 //    ????
 //        }
-//      public static void octal() {
-//    %o
-//        }
-//      public static void decimal() {
-//    %d
-//        }
-//      public static void hexadecimal() {
-//    %h
-//        }
+    public static void octal() {
+        Double i = Console.getDoubleInput("Enter a number");
+        Console.println("%s = %o", i);
+    }
+
+    public static void decimal() {
+        Double i = Console.getDoubleInput("Enter a number");
+        Console.println("%s = %d", i);
+    }
+
+    public static void hexadecimal() {
+        Double i = Console.getDoubleInput("Enter a number");
+        Console.println("%s = %h", i);
+    }
+}
     // Again not sure with how to go about mode changes that change the calculator and how it returns values
 
 //      public unitSwitch() {
-//        case radian Math.toRadians(i)
+//        case1 radian Math.toRadians(i)
 //        case degree Math.toDegree(i)
 //    }
 

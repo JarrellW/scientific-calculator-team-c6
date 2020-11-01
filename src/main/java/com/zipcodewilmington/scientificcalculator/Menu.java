@@ -68,7 +68,7 @@ public class Menu {
                     Integer trigMenuOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (trigMenuOption) {
                         case 1:
-                             SciFunctions.sin();
+                            SciFunctions.sin();
                             runMenu();
                             break;
                         case 2:
@@ -147,20 +147,20 @@ public class Menu {
                     Integer switchDisplayOption = Console.getIntegerInput("Enter Option Number: ");
                     switch (switchDisplayOption) {
                         case 1:
-                            //binary()
+                            //SciFunctions.binary()
                             //runMenu();
                             break;
                         case 2:
-                            //Octal()
-                            //runMenu();
+                            SciFunctions.octal();
+                            runMenu();
                             break;
                         case 3:
-                            //decimal()
-                            //runMenu();
+                            SciFunctions.decimal();
+                            runMenu();
                             break;
                         case 4:
-                            //hexidecimal()
-                            //runMenu();
+                            SciFunctions.hexadecimal();
+                            runMenu();
                             break;
                         default:
                             runMenu();
@@ -177,11 +177,11 @@ public class Menu {
                             //runMenu();
                             break;
                         case 2:
-                            //clear memory()
+                            //clearmemory()
                             //runMenu();
                             break;
                         case 3:
-                            //Recall memory()
+                            //Recallmemory()
                             //runMenu();
                         default:
                             Console.println("Invalid entry!");
