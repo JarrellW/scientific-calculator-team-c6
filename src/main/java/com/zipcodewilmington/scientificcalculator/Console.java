@@ -63,5 +63,13 @@ public class Console {
     public static void memorySettingsMenu(){
         Console.println("Memory Settings Menu: \n" +
                 "1:Add Value To Memory 2:Clear Memory 3:Recall Memory");
-    };
+    }
+    public static Double getDouble(){
+        Double i = Console.getDoubleInput("Enter number");
+        return i;
+    }
+    public static Integer getInteger(){
+        Integer i = Console.getIntegerInput("Enter number");
+        return i;
+    }
 }
