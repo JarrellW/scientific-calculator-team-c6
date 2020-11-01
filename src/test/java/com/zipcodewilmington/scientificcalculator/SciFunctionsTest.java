@@ -21,7 +21,7 @@ class SciFunctionsTest {
     public void tan() {
         Double num1 = 98.8;
         Double expectedResult = -0.1594846391;
-        Double  actualResult = SciFunctions.cos(num1);
+        Double  actualResult = SciFunctions.tan(num1);
         assertEquals(expectedResult, actualResult);
     }
 
