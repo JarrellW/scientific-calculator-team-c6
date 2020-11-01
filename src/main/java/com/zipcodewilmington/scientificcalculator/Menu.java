@@ -7,6 +7,7 @@ public class Menu {
         boolean running = true;
         Double displayNum = 0.0;
         Double userNum = 0.0;
+        Double userNum2 = 0.0;
         while(running == true) {
             Console.println("Calculator Main Menu:");
             Console.printMenuOptions();
@@ -27,11 +28,13 @@ public class Menu {
                     break;
                 case 3:
                     userNum = Console.getDouble();
-                    displayNum = Calculator.multiply(displayNum,userNum);
+                    userNum2 = Console.getDouble();
+                    displayNum = Calculator.multiply(userNum,userNum2);
                     break;
                 case 4:
                     userNum = Console.getDouble();
-                    displayNum = Calculator.divide(displayNum,userNum);
+                    userNum2 = Console.getDouble();
+                    displayNum = Calculator.divide(userNum,userNum2);
                     break;
                 case 5:
                     userNum = Console.getDouble();
