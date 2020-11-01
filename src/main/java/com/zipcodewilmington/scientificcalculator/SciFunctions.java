@@ -55,32 +55,40 @@ public class SciFunctions {
         Double i = Console.getDoubleInput("Enter a number");
         Console.println("inverse ln(%s) = %s", i, (Math.exp(Math.log(i))));
     }
-
-    // Mode switching not sure how to use this yet understand changing the string formatting
-//      public static void binary() {
-//    ????
-//        }
+ public static void binary() {
+      Integer i = Console.getIntegerInput("Enter a number");
+      Console.println("Initial double value is " + i);
+     Console.println(Integer.toBinaryString(i));
+  }
     public static void octal() {
-        Double i = Console.getDoubleInput("Enter a number");
-        Console.println("%s = %o", i);
+        Integer i = Console.getIntegerInput("Enter a number");
+        Console.println("Initial double value is " + i);
+        Console.println(Integer.toOctalString(i));
     }
 
-    public static void decimal() {
-        Double i = Console.getDoubleInput("Enter a number");
-        Console.println("%s = %d", i);
-    }
+//    public static void decimal() {
+//        Integer i = Console.getIntegerInput("Enter a number");
+//        Console.println("Initial double value is " + i);
+//        Console.println(parseInt(i));
+//    }
 
     public static void hexadecimal() {
-        Double i = Console.getDoubleInput("Enter a number");
-        Console.println("%s = %h", i);
+        Integer i = Console.getIntegerInput("Enter a number");
+        Console.println("Initial double value is " + i);
+        Console.println(Integer.toHexString(i));
+    }
+
+    public static void radians() {
+        Integer i = Console.getIntegerInput("Enter a number");
+        Console.println("Initial double value is " + i);
+        Console.println("%s", i, Math.toRadians(i));
+    }
+    public static void degrees() {
+        Integer i = Console.getIntegerInput("Enter a number");
+        Console.println("Initial double value is " + i);
+        Console.println("%s", i, Math.toDegrees(i));
     }
 }
-    // Again not sure with how to go about mode changes that change the calculator and how it returns values
-
-//      public unitSwitch() {
-//        case1 radian Math.toRadians(i)
-//        case degree Math.toDegree(i)
-//    }
 
    //public static void memory() {
 
