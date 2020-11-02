@@ -92,6 +92,14 @@ public class SciFunctions {
         Console.println("%s",  Math.toDegrees(i));
         return result;
     }
+//    public static Double factorial(Double i) {
+//        if (i <= 1)
+//            return 1.0;
+//        else
+//            return i * factorial(i - 1);
+//        Double result = Double i;
+//        return result;
+//    }
 }
 
 

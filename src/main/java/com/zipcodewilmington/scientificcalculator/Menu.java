@@ -60,8 +60,9 @@ public class Menu {
                     displayNum = Calculator.switchSign(userNum);
                     break;
                 case 10:
-                    //factorial
-                    break;
+//                    userNum = Console.getDouble();
+//                    displayNum = Calculator.factorial(userNum);
+//                    break;
                 case 11:
                     //our extra feature
                     break;
