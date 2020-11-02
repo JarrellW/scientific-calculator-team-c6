@@ -83,7 +83,7 @@ public class SciFunctions {
         return result;
     }
     public static Double multiplyByPi(Double i) {
-        Double result = 3.1415926;
+        Double result = i * 3.1415926;
         return result;
     }
     public static Double factorial(Double a) {

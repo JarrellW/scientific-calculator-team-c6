@@ -121,7 +121,7 @@ class SciFunctionsTest {
     @Test
     public void multiplyByPi() {
         Double num1 = 3.0;
-        Double expectedResult = 9.4247778 ;
+        Double expectedResult = 9.424777800000001;
         Double  actualResult = SciFunctions.multiplyByPi(num1);
         assertEquals(expectedResult, actualResult);
     }
