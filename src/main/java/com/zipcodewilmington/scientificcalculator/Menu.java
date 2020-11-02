@@ -67,7 +67,8 @@ public class Menu {
                        // displayNum = Calculator.factorial(userNum);
                            break;
                 case 11:
-                    //our extra feature
+                    userNum = Console.getDouble();
+                    displayNum = SciFunctions.multiplyByPi(userNum);
                     break;
                 case 12:
                     userNum = Console.getDouble();
