@@ -118,7 +118,27 @@ class SciFunctionsTest {
         Double  actualResult = SciFunctions.degrees(num1);
         assertEquals(expectedResult, actualResult);
     }
-
+    @Test
+    public void multiplyByPi() {
+        Double num1 = 3.0;
+        Double expectedResult = 9.4247778 ;
+        Double  actualResult = SciFunctions.multiplyByPi(num1);
+        assertEquals(expectedResult, actualResult);
+    }
+    @Test
+    public void factorial() {
+        Double num1 = 3.0;
+        Double expectedResult = 6.0;
+        Double  actualResult = SciFunctions.factorial(num1);
+        assertEquals(expectedResult, actualResult);
+    }
+    @Test
+    public void celToFar(){
+        Double num1 = 3.0;
+        Double expectedResult = 37.4 ;
+        Double  actualResult = SciFunctions.celToFar(num1);
+        assertEquals(expectedResult, actualResult);
+    }
 
 
 
