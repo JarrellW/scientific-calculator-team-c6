@@ -97,14 +97,13 @@ public class SciFunctions {
         Console.println(" %s",  3.1415926);
         return result;
     }
-//    public static Double factorial(Double i) {
-//        if (i <= 1)
-//            return 1.0;
-//        else
-//            return i * factorial(i - 1);
-//        Double result = Double i;
-//        return result;
-//    }
+    public static Double factorial(Double a) {
+        Double result = 1.0;
+        for(Double j = 1.0; j <= a; j++){
+            result = result * j;
+        }
+        return result;
+    }
 
     public static Double celToFar(Double i){
         Double result = ((i/5.0)*9.0)+32.0;

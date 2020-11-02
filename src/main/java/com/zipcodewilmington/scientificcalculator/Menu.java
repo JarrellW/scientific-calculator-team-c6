@@ -63,9 +63,9 @@ public class Menu {
                     displayNum = Calculator.switchSign(userNum);
                     break;
                 case 10:
-//                    userNum = Console.getDouble();
-//                    displayNum = Calculator.factorial(userNum);
-//                    break;
+                        userNum = Console.getDouble();
+                        displayNum = SciFunctions.factorial(userNum);
+                           break;
                 case 11:
                     userNum = Console.getDouble();
                     displayNum = SciFunctions.multiplyByPi(userNum);
