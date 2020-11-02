@@ -67,6 +67,43 @@ class SciFunctionsTest {
         Double  actualResult = SciFunctions.inverseNaturalLog(num1);
         assertEquals(expectedResult, actualResult);
     }
+////    public void binary() {
+////        Integer num1 = 64;
+////        Integer expectedResult = 1000000 ;
+////        Integer  actualResult = SciFunctions.binary(num1);
+////        assertEquals(expectedResult, actualResult);
+////    }
+////    public void octal() {
+////        Integer num1 = 64;
+////        Integer expectedResult = 100 ;
+////        Integer  actualResult = SciFunctions.octal(num1);
+////        assertEquals(expectedResult, actualResult);
+////    }
+////    public void decimal() {
+////        Integer num1 = 64;
+////        Integer expectedResult = 64 ;
+////        Integer actualResult = SciFunctions.decimal(num1);
+////        assertEquals(expectedResult, actualResult);
+////    }
+////    public void hexadecimal() {
+////        Integer num1 = 64;
+////        Integer expectedResult = 40 ;
+////        Integer  actualResult = SciFunctions.hexadecimal(num1);
+////        assertEquals(expectedResult, actualResult);
+////    }}
+    public void radians() {
+        Double num1 = 64.0;
+        Double expectedResult = 1.117010721276371 ;
+        Double  actualResult = SciFunctions.radians(num1);
+        assertEquals(expectedResult, actualResult);
+    }
+    public void degrees() {
+        Double num1 = 64.0;
+        Double expectedResult = 3666.9298888372687 ;
+        Double  actualResult = SciFunctions.degrees(num1);
+        assertEquals(expectedResult, actualResult);
+    }
+
 
 
 
