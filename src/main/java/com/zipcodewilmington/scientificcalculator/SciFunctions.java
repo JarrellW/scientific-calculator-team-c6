@@ -92,6 +92,10 @@ public class SciFunctions {
         Console.println("%s",  Math.toDegrees(i));
         return result;
     }
+    public static Double celToFar(Double i){
+        Double result = ((i/5.0)*9.0)+32.0;
+        return result;
+    }
 }
 
 

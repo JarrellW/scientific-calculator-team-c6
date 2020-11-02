@@ -26,6 +26,7 @@ public class Menu {
                     break;
                 case 2:
                     userNum = Console.getDouble();
+                    
                     displayNum = Calculator.subtract(displayNum,userNum);
                     break;
                 case 3:
@@ -66,7 +67,8 @@ public class Menu {
                     //our extra feature
                     break;
                 case 12:
-                    //our second extra feature
+                    userNum = Console.getDouble();
+                    displayNum = SciFunctions.celToFar(userNum);
                     break;
                 case 13:
                     Console.printTrigFunctionsMenuOptions();
