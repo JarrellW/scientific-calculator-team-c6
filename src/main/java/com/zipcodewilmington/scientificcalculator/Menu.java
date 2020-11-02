@@ -187,6 +187,7 @@ public class Menu {
                             break;
                         case 3:
                             Memory.checkMemory();
+                            break;
                         default:
                             Console.println("Invalid entry!");
                             break;
