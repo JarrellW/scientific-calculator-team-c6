@@ -66,4 +66,11 @@ class CalculatorTest {
         Double actualResult = Calculator.inverse(num1);
         assertEquals(expectedResult, actualResult);
     }
+    @Test
+    public  void switchSign(){
+        Double num1 = -44.0;
+        Double expectedResult = 44.0;
+        Double actualResult = Calculator.switchSign(num1);
+        assertEquals(expectedResult, actualResult);
+    }
 }
