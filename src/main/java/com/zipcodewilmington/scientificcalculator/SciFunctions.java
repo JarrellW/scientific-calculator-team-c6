@@ -92,7 +92,11 @@ public class SciFunctions {
         Console.println("%s",  Math.toDegrees(i));
         return result;
     }
-
+    public static Double multiplyByPi(Double i) {
+        Double result = 3.1415926;
+        Console.println(" %s",  3.1415926);
+        return result;
+    }
 //    public static Double factorial(Double i) {
 //        if (i <= 1)
 //            return 1.0;
