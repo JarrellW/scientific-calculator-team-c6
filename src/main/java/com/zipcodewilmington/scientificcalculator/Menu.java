@@ -11,10 +11,11 @@ public class Menu {
         Integer userInt = 0;
         String displaySting = "";
         while(running == true) {
+            Console.println(displayNum.toString());
             Console.println("Calculator Main Menu:");
             Console.printMenuOptions();
             Integer userInput = Console.getIntegerInput("Enter Option Number: ");
-            Console.println(displayNum.toString());
+
             switch (userInput) {
                 case 0:
                     displayNum = 0.0;
@@ -22,12 +23,13 @@ public class Menu {
                     break;
                 case 1:
                     userNum = Console.getDouble();
-                    displayNum = Calculator.add(displayNum,userNum);
+                    userNum2 = Console.getDouble();
+                    displayNum = Calculator.add(userNum,userNum2);
                     break;
                 case 2:
                     userNum = Console.getDouble();
-                    
-                    displayNum = Calculator.subtract(displayNum,userNum);
+                    userNum2 = Console.getDouble();
+                    displayNum = Calculator.subtract(userNum,userNum2);
                     break;
                 case 3:
                     userNum = Console.getDouble();
