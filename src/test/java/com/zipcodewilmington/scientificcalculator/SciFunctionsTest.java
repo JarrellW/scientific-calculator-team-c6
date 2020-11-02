@@ -16,14 +16,14 @@ class SciFunctionsTest {
     @Test
     public void cos() {
         Double num1 = 98.8;
-        Double expectedResult = -0.1594846391;
+        Double expectedResult = -0.15948463910012836;
         Double  actualResult = SciFunctions.cos(num1);
         assertEquals(expectedResult, actualResult);
     }
     @Test
     public void tan() {
-        Double num1 = 98.8;
-        Double expectedResult = -0.1594846391;
+        Double num1 = 80.8;
+        Double expectedResult = -1.2131408045265912;
         Double  actualResult = SciFunctions.tan(num1);
         assertEquals(expectedResult, actualResult);
     }
@@ -58,14 +58,14 @@ class SciFunctionsTest {
     @Test
     public void inverseLog() {
         Double num1 = 98.8;
-        Double expectedResult = 4.593097604753822 ;
+        Double expectedResult = 7.350416252303545 ;
         Double  actualResult = SciFunctions.inverseLog(num1);
         assertEquals(expectedResult, actualResult);
     }
     @Test
     public void naturalLog() {
         Double num1 = 98.8;
-        Double expectedResult = 7.350416252303545 ;
+        Double expectedResult = 4.593097604753822;
         Double  actualResult = SciFunctions.naturalLog(num1);
         assertEquals(expectedResult, actualResult);
     }
