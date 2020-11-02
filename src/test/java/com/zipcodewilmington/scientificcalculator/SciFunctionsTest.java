@@ -127,8 +127,8 @@ class SciFunctionsTest {
     }
     @Test
     public void factorial() {
-        Double num1 = 3.0;
-        Double expectedResult = 6.0;
+        Double num1 = 4.0;
+        Double expectedResult = 24.0;
         Double  actualResult = SciFunctions.factorial(num1);
         assertEquals(expectedResult, actualResult);
     }
