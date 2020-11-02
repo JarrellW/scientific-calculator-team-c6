@@ -59,7 +59,6 @@ public class Calculator {
     }
     public static Double switchSign(Double i) {
         Double result = i *= -1;
-        Console.println("%s", result);
         return result;
     }
 }

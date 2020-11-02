@@ -94,7 +94,6 @@ public class SciFunctions {
     }
     public static Double celToFar(Double i){
         Double result = ((i/5.0)*9.0)+32.0;
-        Console.println(result.toString());
         return result;
     }
 }
